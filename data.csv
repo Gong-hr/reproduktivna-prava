@@ -1,0 +1,28 @@
+r.b,name,lon,lat,adresa,postcode,grad,županija,specijalisti,prizivi,cijena
+1,KBC ZAGREB,16.0055356,45.8238763,Kišpatićeva ul. 12,1000,Zagreb,Grad Zagreb,45,40,2500 kn
+2,KBC SESTRE MILOSRDNICE,15.9600553,45.8128474,Vinogradska cesta 29,10000,Zagreb,Grad Zagreb,19,15,2500 kn
+3,KB MERKUR,15.9954004,45.8204390,Zajčeva 19,1000,Zagreb,Grad Zagreb,23,5,2250 kn
+4,KB SVETI DUH,15.9366584,45.8199087,Ul. Sveti Duh 64,1000,Zagreb,Grad Zagreb,20,20,
+5,KBC OSIJEK,18.7115891,45.5585367,Ul. Josipa Huttlera 4,31000,Osijek,Osječko-baranjska,23,19,2100 kn
+6,KBC RIJEKA,14.4234864,45.3326229,Krešimirova 42,51000,Rijeka,Primorsko-goranska,20,0,3000 kn
+7,KBC SPLIT,16.4557709,43.5037592,Spinčićeva ul. 1,21000,Split,Splitsko-dalmatinska,30,29,-
+8,OB BJELOVAR,16.8444846,45.9031129,Ul. Antuna Mihanovića 8,43000,Bjelovar,Bjelovarsko-bilogorska,7,5,1870 kn
+9,OB DR.T.BARDEK KOPRIVNICA,16.8358394,46.1625767,Željka Selingera 1,48000,Koprivnica,Koprivničko-križevačka,7,2,2 500 kn
+10,OB VIROVITICA,17.3871973,45.8291398,Ljudevita Gaja 21,33000,Virovitica,Virovitičko-podravska,4,4,2 500 kn
+11,OB ZADAR,15.2323953,44.1073540,Ul. Bože Peričića 5,23000, Zadar,Zadarska,9,7,2800 kn
+12,OB PULA,13.8552443,44.8659542,Zagrebačka 30,52100,Pula,Istarska,13,0,2200 kn 
+13,OB VINKOVCI,18.8160984,45.2925721,Zvonarska ul. 57,32100,Vinkovci,Vukovarsko-srijemska,7,7,-
+14,OB KARLOVAC,15.5364801,45.4771272,Andrije Štampara 3,47000,Karlovac,Karlovačka,10,0,2500 kn
+15,OB ŠIBENIK,15.8992301,43.7334575,Stjepana Radića 83,22000,Šibenik,Šibensko-kninska,8,6,2700 kn 
+16,OB GOSPIĆ,15.3602427,44.5439608,Kaniška ul. 111,53000,Gospić,Ličko-senjska,3,0,-
+17,OB OGULIN,15.2291659,45.2579406,Bolnička ul. 38,47300,Ogulin,Karlovačka,3,0,2500 kn
+18,OB KNIN,16.2125099,44.0525053,Kralja Svetoslava Suronje 12,22300,Knin,Šibensko-kninska,4,0,2600 kn
+19,OB VUKOVAR,18.9913752,45.3581496,Županijska ul. 35,32000,Vukovar,Vukovarsko-srijemska,6,0,2 700 kn
+20,OB DR I.PEDIŠIĆ - SISAK,16.3670965,45.4766615,Ul. Josipa Jurja Strossmayera 59,44000,Sisak,Sisačko-moslavačka,7,1,2 000 kn
+21,OŽB NAŠICE,18.0958125,45.4887173,Ul. bana Jelačića 10,31500,Našice,Osječko-baranjska,4,4,-
+22,OB ZABOK,15.9372221,46.0177195,"Bračak 8, p.p. 36",49210,Zabok,Krapinsko-zagorska,10,6,2 000 kn
+23,OB DR.J.BENČEVIĆ SL.BR.,18.0222455,45.1551302,Ul. Andrije Štampara 42,35000,Slavonski Brod,Brodsko-posavska,13,6,2089 kn
+24,OB DUBROVNIK,18.0736348,42.6486813,Dr. Roka Mišetića 2,20000,Dubrovnik,Dubrovačko-neretvanska,5,2,3000 kn
+25,OB POŽEGA,17.6971243,45.3440737,Osječka 107,34000,Požega,Požeško-slavonska,5,5,-
+26,OB VARAŽDIN,16.3229506,46.3025669,Ul. Ivana Meštrovića 1,42000,Varaždin,Vraždinska,9,2,2000 kn
+27,ŽB ČAKOVEC,16.4317117,46.3941475,Ul. Ivana Gorana Kovačića 1E,40000,Čakovec,Međimurska,8,1,2000 kn
