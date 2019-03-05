@@ -36,7 +36,7 @@
 
 	//polygons
 
-	$.getJSON("/maps/grad-zagreb.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/grad-zagreb.geojson",function(hoodData){
 	   L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -56,7 +56,7 @@
 	});
 
 
-	$.getJSON("/maps/krapinsko-zagorska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/krapinsko-zagorska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -76,7 +76,7 @@
 	});
 
 
-	$.getJSON("/maps/primorsko-goranska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/primorsko-goranska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -96,7 +96,7 @@
 	});
 	
 	
-	$.getJSON("/maps/bjelovarsko-bilogorska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/bjelovarsko-bilogorska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -115,7 +115,7 @@
 	  }  ).addTo(map);
 	});
 
-	$.getJSON("/maps/brodsko-posavska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/brodsko-posavska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -135,7 +135,7 @@
 	});
 
 
-	$.getJSON("/maps/dubrovacko-neretvanska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/dubrovacko-neretvanska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -154,7 +154,7 @@
 	  }  ).addTo(map);
 	});	
 	
-	$.getJSON("/maps/istarska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/istarska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -173,7 +173,7 @@
 	  }  ).addTo(map);
 	});
 
-	$.getJSON("/maps/karlovacka.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/karlovacka.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -193,7 +193,7 @@
 	});
 
 
-	$.getJSON("/maps/koprivnicko-krizevacka.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/koprivnicko-krizevacka.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -213,7 +213,7 @@
 	});
 
 
-	$.getJSON("/maps/licko-senjska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/licko-senjska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -232,7 +232,7 @@
 	  }  ).addTo(map);
 	});
 
-	$.getJSON("/maps/medimurska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/medimurska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -251,7 +251,7 @@
 	  }  ).addTo(map);
 	});
 	
-	$.getJSON("/maps/osjecko-baranjska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/osjecko-baranjska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -270,7 +270,7 @@
 	  }  ).addTo(map);
 	});
 	
-	$.getJSON("/maps/pozesko-slavonska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/pozesko-slavonska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -289,7 +289,7 @@
 	  }  ).addTo(map);
 	});
 	
-	$.getJSON("/maps/sisacko-moslavacka.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/sisacko-moslavacka.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -308,67 +308,47 @@
 	  }  ).addTo(map);
 	});
 	
-	
-
-	$.getJSON("/maps/splitsko-dalmatinska.geojson",function(hoodData){
-	  L.geoJson( hoodData  , {
-	    style: function(feature){
-	      var fillColor,
-	          density = feature.properties.density;
-	      if ( density > 80 ) fillColor = "#006837";
-	      else if ( density > 750 ) fillColor = "#31a354";
-	      else if ( density > 450 ) fillColor = "#78c679";
-	      else if ( density > 250 ) fillColor = "#c2e699";
-	      else if ( density > 92 ) fillColor = "#ffffcc";
-	      else fillColor = "#f7f7f7";  // no data
-	      return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
-	    },
-	    onEachFeature: function( feature, layer ){
-	      layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " pobačaja" )
-	    }
-	  }  ).addTo(map);
-	});
-	
-	$.getJSON("/maps/sibensko-kninska.geojson",function(hoodData){
-	  L.geoJson( hoodData  , {
-	    style: function(feature){
-	      var fillColor,
-	          density = feature.properties.density;
-	      if ( density > 80 ) fillColor = "#006837";
-	      else if ( density > 750 ) fillColor = "#31a354";
-	      else if ( density > 450 ) fillColor = "#78c679";
-	      else if ( density > 250 ) fillColor = "#c2e699";
-	      else if ( density > 92 ) fillColor = "#ffffcc";
-	      else fillColor = "#f7f7f7";  // no data
-	      return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
-	    },
-	    onEachFeature: function( feature, layer ){
-	      layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " pobačaja" )
-	    }
-	  }  ).addTo(map);
-	});
-
-	$.getJSON("/maps/varazdinska.geojson",function(hoodData){
-	  L.geoJson( hoodData  , {
-	    style: function(feature){
-	      var fillColor,
-	          density = feature.properties.density;
-	      if ( density > 80 ) fillColor = "#006837";
-	      else if ( density > 750 ) fillColor = "#31a354";
-	      else if ( density > 450 ) fillColor = "#78c679";
-	      else if ( density > 250 ) fillColor = "#c2e699";
-	      else if ( density > 92 ) fillColor = "#ffffcc";
-	      else fillColor = "#f7f7f7";  // no data
-	      return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
-	    },
-	    onEachFeature: function( feature, layer ){
-	      layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " pobačaja" )
-	    }
-	  }  ).addTo(map);
-	});
 	
 
-	$.getJSON("/maps/viroviticko-podravska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/splitsko-dalmatinska.geojson",function(hoodData){
+	  L.geoJson( hoodData  , {
+	    style: function(feature){
+	      var fillColor,
+	          density = feature.properties.density;
+	      if ( density > 80 ) fillColor = "#006837";
+	      else if ( density > 750 ) fillColor = "#31a354";
+	      else if ( density > 450 ) fillColor = "#78c679";
+	      else if ( density > 250 ) fillColor = "#c2e699";
+	      else if ( density > 92 ) fillColor = "#ffffcc";
+	      else fillColor = "#f7f7f7";  // no data
+	      return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+	    },
+	    onEachFeature: function( feature, layer ){
+	      layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " pobačaja" )
+	    }
+	  }  ).addTo(map);
+	});
+	
+	$.getJSON("/reproduktivna-prava/maps/sibensko-kninska.geojson",function(hoodData){
+	  L.geoJson( hoodData  , {
+	    style: function(feature){
+	      var fillColor,
+	          density = feature.properties.density;
+	      if ( density > 80 ) fillColor = "#006837";
+	      else if ( density > 750 ) fillColor = "#31a354";
+	      else if ( density > 450 ) fillColor = "#78c679";
+	      else if ( density > 250 ) fillColor = "#c2e699";
+	      else if ( density > 92 ) fillColor = "#ffffcc";
+	      else fillColor = "#f7f7f7";  // no data
+	      return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+	    },
+	    onEachFeature: function( feature, layer ){
+	      layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " pobačaja" )
+	    }
+	  }  ).addTo(map);
+	});
+
+	$.getJSON("/reproduktivna-prava/maps/varazdinska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -388,7 +368,7 @@
 	});
 	
 
-	$.getJSON("/maps/vukovarsko-srijemska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/viroviticko-podravska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -408,7 +388,27 @@
 	});
 	
 
-	$.getJSON("/maps/zadarska.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/vukovarsko-srijemska.geojson",function(hoodData){
+	  L.geoJson( hoodData  , {
+	    style: function(feature){
+	      var fillColor,
+	          density = feature.properties.density;
+	      if ( density > 80 ) fillColor = "#006837";
+	      else if ( density > 750 ) fillColor = "#31a354";
+	      else if ( density > 450 ) fillColor = "#78c679";
+	      else if ( density > 250 ) fillColor = "#c2e699";
+	      else if ( density > 92 ) fillColor = "#ffffcc";
+	      else fillColor = "#f7f7f7";  // no data
+	      return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+	    },
+	    onEachFeature: function( feature, layer ){
+	      layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " pobačaja" )
+	    }
+	  }  ).addTo(map);
+	});
+	
+
+	$.getJSON("/reproduktivna-prava/maps/zadarska.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
@@ -428,7 +428,7 @@
 	});
 	
 	
-	$.getJSON("/maps/zagrebacka.geojson",function(hoodData){
+	$.getJSON("/reproduktivna-prava/maps/zagrebacka.geojson",function(hoodData){
 	  L.geoJson( hoodData  , {
 	    style: function(feature){
 	      var fillColor,
